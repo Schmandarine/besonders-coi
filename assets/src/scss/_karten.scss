@@ -1,0 +1,154 @@
+// Cards
+.blog_posts_block {
+    @media all and (-ms-high-contrast: none) {
+        .card-img-top,
+        .card-hexagon {
+            display: none;
+        }
+      }
+}
+.karten_block,
+.blog_posts_block {
+
+    padding: 2em 0;
+
+
+    .card {
+        transition: all 150ms;
+        margin: 4.5em auto 1em auto;
+    }
+
+    .card-hexagon {
+        position: absolute;
+        top: -4.5em;
+        padding: 40px;
+
+        .icon {
+            width: 4rem;
+            height: 4rem;
+            margin: unset;
+        }
+    }
+
+    .slick-track {
+        display: flex;
+
+        .slick-slide {
+            padding: 0 15px;
+            display: flex;
+            height: auto;
+            align-items: center; //optional
+            justify-content: center; //optional
+        }
+    }
+
+    .hexagon_item {
+        transform: translateY(20px);
+    }
+
+}
+
+.blog_posts_block {
+    .card-img-top {
+        height: 19vw;
+        object-fit: cover;
+        min-height: 250px; 
+        max-height: 250px;
+}
+}
+
+
+// Cards
+.karten_block {
+
+    &.karte-mit-thumbnail {
+        font-size: 1em;
+        overflow: hidden;
+
+
+        .karte-titel {
+            font-size: 1.3em;
+            padding: 0;
+        }
+
+        .card-body {
+            margin-top: .4em;
+        }
+
+    }
+
+    .karte-titel {
+        font-size: 1.6em;
+        margin-top: auto;
+        padding: 2em 0 .5em 0;
+        word-break: break-word;
+    }
+
+    a:focus,
+    a:hover {
+        text-decoration: none;
+    }
+
+
+
+}
+
+.card-link-wrapper {
+    transition: all 350ms;
+
+    &:hover {
+        text-decoration: none;
+
+        .card {
+            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.1);
+            transform: scale(1) translateY(-2px);
+        }
+
+        .card-hexagon {
+            animation: bounce 0.4s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+    }
+}
+// IE11
+@media all and (-ms-high-contrast: none) {
+    .card-link-wrapper {
+        transition:none!important;
+    
+        &:hover {
+    
+            .card {
+                box-shadow: none!important;
+                transform: none!important;
+            }
+    
+            .card-hexagon {
+                animation:none!important;
+            }
+        }
+    }
+  }
+  // EDGE
+@supports (-ms-ime-align: auto) {
+    .card-link-wrapper {
+        transition:none!important;
+    
+        &:hover {
+    
+            .card {
+                box-shadow: none!important;
+                transform: none!important;
+            }
+    
+            .card-hexagon {
+                animation:none!important;
+            }
+        }
+    }
+  }
+
+
+.card-body p {
+    margin: 0;
+}

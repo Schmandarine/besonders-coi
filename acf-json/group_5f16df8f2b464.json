@@ -1,0 +1,43 @@
+{
+    "key": "group_5f16df8f2b464",
+    "title": "Block: Ablaufdiagramm",
+    "fields": [
+        {
+            "key": "field_5f16dfa06327d",
+            "label": "Ablaufdiagramm",
+            "name": "ablaufdiagramm",
+            "type": "text",
+            "instructions": "Backend Pflegbarkeit wird noch geklärt",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "block",
+                "operator": "==",
+                "value": "acf\/ablaufdiagramm"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1595334582
+}

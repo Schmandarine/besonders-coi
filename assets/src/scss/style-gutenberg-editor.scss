@@ -1,0 +1,32 @@
+
+@import "./variables";
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+@import "./custom_bootstrap.scss";
+
+//@import "./slick-1-8-1/slick";
+//@import "./slick-1-8-1/slick-theme";
+//@import "./scss/assets/slick-custom";
+
+
+@import "./karten";
+@import "./globals";
+@import "./site-footer";
+@import "./site-meta-contact";
+
+@import "./assets/hexagon";
+@import "./assets/section-spacer";
+@import "./assets/bg-pattern";
+
+@import "./templates/subpage";
+@import "./templates/posts";
+
+.wp-block {
+    max-width: 90%;
+}
+
+ul {
+    list-style-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 344 400'%3E%3Cpath fill='%23cc0f12' d='M172 4L2 102v196l170 98 170-98V102z'/%3E%3C/svg%3E");
+}

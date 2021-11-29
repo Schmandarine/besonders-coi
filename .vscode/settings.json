@@ -1,0 +1,15 @@
+{
+  "liveSassCompile.settings.formats": [
+    // You can add more
+    {
+      "format": "compressed",
+      "extensionName": ".css",
+      "savePath": "/assets/dist/css"
+    }
+  ],
+  "liveSassCompile.settings.excludeList": [
+    "**/node_modules/**",
+    ".vscode/**",
+    "**/template-parts/**",
+  ]
+}

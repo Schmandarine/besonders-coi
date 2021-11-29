@@ -1,0 +1,14 @@
+.bg-pattern {
+    background-image: url('../img/bg-pattern.png');
+    background-size: contain;
+    background-repeat: repeat-x;
+    background-position: top;
+}
+
+.bg-pattern-red {
+    background-image: url('../img/bg-pattern-red.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+}

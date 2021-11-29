@@ -1,0 +1,111 @@
+/* FLIP BOX START */
+@import "../../../scss/variables";
+
+@import "../../../bootstrap/scss/functions";
+@import "../../../bootstrap/scss/variables";
+@import "../../../bootstrap/scss/mixins";
+
+
+
+.flip-box-block {
+
+
+    .card {
+        width: 100%;
+        height: 360px;
+        perspective: 1500px;
+        transition: .3s;
+
+        @include media-breakpoint-up(md) {
+            margin-bottom: 1em;
+            height: 450px;
+        }
+
+        .more {
+            display: none;
+
+            &:checked~.content {
+                transform: rotateY(180deg);
+            }
+        }
+
+        .content {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            transform-style: preserve-3d;
+            transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
+
+            .front,
+            .back {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                backface-visibility: hidden;
+                transform-style: preserve-3d;
+
+                .inner {
+                    z-index: 1;
+                    position: relative;
+                    display: flex;
+                    flex-flow: column;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+            }
+
+            .back {
+                transform: rotateY(180deg);
+
+                .inner {
+                    overflow-y: scroll;
+                    overflow-x: hidden;
+                    scrollbar-width: none;
+                    -ms-overflow-style: none;
+
+                    &::-webkit-scrollbar {
+                        display: none;
+                    }
+                }
+            }
+
+            .flipbox_label {
+                cursor: pointer;
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                top: 0;
+                margin: 0;
+                padding: 0;
+            }
+
+            .flipbox_label:hover .card-hexagon-hover {
+                animation: bounce 0.4s;
+                animation-direction: alternate;
+                animation-iteration-count: infinite;
+            }
+
+            .flipbox-link-text {
+                font-size: 1.8rem;
+            }
+
+            .hexagon-bg-slide {
+                height: 90%;
+                width: auto;
+                object-fit: contain;
+
+            }
+
+            .hexagon-icon {
+                width: auto;
+                height: 40%;
+                object-fit: scale-down;
+            }
+
+        }
+
+    }
+}

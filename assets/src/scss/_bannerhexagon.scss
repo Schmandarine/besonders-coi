@@ -1,0 +1,50 @@
+.banner-hexagondownload {
+
+    @media screen and (min-width: 769px){
+        .hexagon-download {
+            position: absolute;
+        }
+        .thumbnail-downloadbanner {
+            display: block!important;
+        }
+
+        .flex-row-reverse {
+            .col-8 {
+                padding-left: 170px;
+            }
+        }
+    }
+
+
+
+
+
+    .thumbnail-downloadbanner {
+        display: none;
+    }
+
+    .flex-row-reverse {
+        .col-8 {
+            //padding-left: 170px;
+        }
+    
+        .hexagon-download {
+            right: -120px;
+            left: unset;
+        }
+    }
+
+    .hexagon-download {
+        top: 70px;
+        height: 100%;
+        width: 200px;
+        left: -50px;
+        z-index: 2;
+            &:hover {
+            animation: bounce 0.4s;
+            animation-direction: alternate;
+            animation-iteration-count: infinite;
+        }
+    }
+
+}

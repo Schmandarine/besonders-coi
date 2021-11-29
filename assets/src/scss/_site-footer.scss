@@ -1,0 +1,143 @@
+.site-footer {
+    font-size: .8rem;
+    overflow: hidden;
+
+    a {
+        color: rgba(255, 255, 255, 0.5);
+
+        &:hover {
+            text-decoration: none;
+            color: white;
+        }
+    }
+
+    a.btn {
+        color: white;
+    }
+
+    .some-footer-icons {
+        color: white;
+        font-size: 1em;
+
+        a {
+            color: white;
+            text-decoration: none;
+
+            &:hover path {
+                fill: $primary;
+            }
+
+        }
+
+        svg {
+            width: 25px;
+            height: 25px;
+            margin: 0 10px 0 10px;
+            }
+
+    }
+
+
+}
+
+.footer-anschrift {
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    height: 100%;
+
+    @include media-breakpoint-down(sm) {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    img {
+        max-width: 100px;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.footer-logos-wrapper {
+    background-color: white;
+    position: absolute;
+    right: 15px;
+    top: 0;
+    bottom: 0;
+    width: 12.5%;
+    align-items: center;
+    flex-flow: column;
+    justify-content: space-evenly;
+
+
+    span {
+        color: gray;
+        font-size: 80%;
+        text-align: center;
+        padding: 21px;
+    }
+
+    @include media-breakpoint-down(sm) {
+        width: 25%;
+        position: relative;
+        padding-bottom: 1em;
+        right: unset;
+    }
+
+    .footer-partner-logos {
+        width: auto;
+        height: 70%;
+    }
+}
+
+
+.footer-col-1 {
+    display: flex;
+    font-weight: bold;
+    font-size: 1em;
+    max-width: 17em;
+}
+
+.footer-widget-title {
+    font-size: 1.25em;
+    padding-bottom: 0.8em;
+    display: block;
+}
+
+.footer-widget ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    li a {
+        font-size: 1em;
+    }
+}
+
+.footer-meta-menu {
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    flex-flow: row;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: row;
+
+        li a {
+            padding: 15px 30px;
+            color: rgba(255, 255, 255, 0.5);
+            font-size: .85em;
+        }
+    }
+}

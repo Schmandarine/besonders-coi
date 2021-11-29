@@ -1,0 +1,26 @@
+.section-spacer {
+    width: 100%;
+    display: flex;
+    margin: 1.5rem auto;
+    align-items: center;
+
+    @include media-breakpoint-up(sm) {
+        margin: 6rem auto;
+    }
+
+    .spacer-line {
+        background-color: #939597;
+        height: 2px;
+        flex-grow: 1;
+    }
+
+    .spacer-hexagon {
+        width: 2rem;
+        height: 2rem;
+        margin: 0 1rem;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 344 400'%3E%3Cpath fill='%23939597' d='M172 4L2 102v196l170 98 170-98V102z'/%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: contain;
+    }
+}

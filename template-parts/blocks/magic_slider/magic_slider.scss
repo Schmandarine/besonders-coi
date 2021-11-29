@@ -1,0 +1,97 @@
+@import "../../../assets/src/scss/variables";
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+#pinContainer {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    -webkit-perspective: 1000;
+    perspective: 1000;
+    padding-top: 50px;
+    margin-bottom: 4em;
+    position: relative;
+
+    &:after {
+        width: 100%;
+        height: 7vw;
+        position: absolute;
+        bottom: -1px;
+        left: 0;
+        content: ' ';
+        display: block;
+        background-image: url("../../../img/slant-invert.png");
+        background-size: 111vw;
+        background-position: -8vw;
+        background-repeat: no-repeat;
+        z-index: 3;
+
+        @include media-breakpoint-only(xs) {
+            display: none;
+        }
+    }
+}
+
+#slideContainer {
+    //width: 500%;
+    height: 100%;
+}
+
+.panel-magic {
+    height: 100%;
+    width: 100%;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+
+    @include media-breakpoint-up(sm) {
+        border-left: 1em solid white;
+        border-right: 1em solid white;
+    }
+
+
+}
+
+.inside-magic {
+
+    background-size: cover;
+
+    span {
+        color: white;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 1.8em;
+        line-height: 1.4;
+        max-width: 22em;
+        display: inline-block;
+        width: 100%;
+        word-break: break-word;
+
+        @include media-breakpoint-down(xs) {
+            font-size: 1.5em;
+        }
+
+        @include media-breakpoint-up(md) {
+            font-size: 3em;
+        }
+    }
+
+}
+
+
+.dark-bg-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: block;
+    content: '';
+    background-color: black;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    opacity: .7;
+}

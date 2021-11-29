@@ -1,0 +1,88 @@
+.search-navi-wrapper {
+	display: flex;
+    align-items: center;
+	justify-content: center;
+	transition: all 250ms;
+	margin: 1em 0;
+	align-items: stretch;
+	position:relative;
+	@include media-breakpoint-down(lg) {
+		position: absolute;
+		right: 15px;
+		top: 0;
+		margin: 0;
+	}
+}
+
+.search-form-wrapper {
+	align-items: center;
+	display: none;
+	z-index: 200;
+	transition: all 250ms;
+	&.visible {
+		display: flex;
+		background-color: $light;
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		transform: translateY(100%);	
+	}
+	form {
+	display: flex;
+    flex-flow: row;
+    flex-wrap: nowrap;
+	}
+
+	label {
+		margin-bottom: 0;
+		padding-left: 1rem;
+	}
+}
+
+.searchform-trigger {
+	text-decoration: none;
+	cursor: pointer;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 3rem;
+	height: 3rem;
+	transition: all 250ms;
+
+	svg {
+		fill: $dark;
+	}
+	&:hover {
+		background-color: $light;
+		svg {
+			fill: $primary;
+		}
+	}
+  }
+
+  #site-searchform {
+	  #search {
+		  border: none;
+		  background-color: $light;
+		  font-size: 1.2rem;
+		  padding: 1rem;
+		  &:focus{
+			outline: 0;
+		  }
+	  }
+	  input[type="submit"]{
+		  background-color: $primary;
+		  border: unset;
+		  color: white;
+		  padding: 0 15px;
+	  }
+  }
+
+  .caldera-grid .btn-primary {
+	  background-color: $primary!important;
+	  border-color: transparent!important;
+	  &:hover {
+			background-color: #a80c0f!important;
+			border-color: #9c0c0e!important;
+	  }
+  }

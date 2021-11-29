@@ -1,0 +1,47 @@
+//@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
+
+$primary: #cc0f12;
+$secondary: #565655;
+$dark: $secondary;
+
+$red-sec-1: #9d110a;
+$gray-sec-1: #b1b2b2;
+
+$theme-colors: ("secondary-1": $red-sec-1,
+    "gray-sec-1": $gray-sec-1);
+
+$gray-100: #f8f9fa !default;
+$gray-300: #dee2e6 !default;
+$gray-500: #adb5bd !default;
+$gray-800: #343a40 !default;
+
+$enable-rounded: false;
+$btn-border-radius: 0px;
+
+$link-color: $primary;
+
+// utility 
+
+$spacer: 1.5rem;
+
+// Cards
+$card-border-radius: 0;
+$card-border-color: none;
+$card-color: white;
+$card-bg: transparent;
+
+$font-family-base: "Open Sans", sans-serif;
+$lead-font-size: 1.45em;
+
+// Typo
+
+$body-color: gray;
+$h2-font-size: 2rem;
+$h3-font-size: 1.4rem;
+$headings-font-weight: 600;
+$headings-margin-bottom: $spacer;
+
+// slick
+
+$slick-arrow-color: $secondary;
+$slick-font-family: "Open Sans";

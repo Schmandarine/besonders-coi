@@ -1,0 +1,8 @@
+.search-card img{
+    width: 20%;
+    height: auto;
+    object-fit: cover;
+    @include media-breakpoint-down(md) {
+        display: none;
+    }
+}

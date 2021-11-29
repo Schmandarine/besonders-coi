@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 300 300" style="enable-background:new 0 0 300 300;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#Adobe_OpacityMaskFilter);}
+	.st1{clip-path:url(#SVGID_2_);}
+	.st2{clip-path:url(#SVGID_2_);mask:url(#SVGID_3_);}
+	.st3{opacity:0.2;clip-path:url(#SVGID_7_);fill:#1D1D1B;}
+	.st4{fill:#FFFFFF;}
+	.st5{fill:none;}
+</style>
+<g>
+	<g>
+		<defs>
+			<rect id="SVGID_1_" x="-13.4" y="-27" width="326" height="342.7"/>
+		</defs>
+		<clipPath id="SVGID_2_">
+			<use xlink:href="#SVGID_1_"  style="overflow:visible;"/>
+		</clipPath>
+		<defs>
+			<filter id="Adobe_OpacityMaskFilter" filterUnits="userSpaceOnUse" x="5.5" y="-7.3" width="287.7" height="313.7">
+				<feColorMatrix  type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 1 0"/>
+			</filter>
+		</defs>
+		<mask maskUnits="userSpaceOnUse" x="5.5" y="-7.3" width="287.7" height="313.7" id="SVGID_3_">
+			<g class="st0">
+				<g>
+					<defs>
+						<rect id="SVGID_4_" x="-13.4" y="-27" width="327.9" height="343.6"/>
+					</defs>
+					<clipPath id="SVGID_5_" class="st1">
+						<use xlink:href="#SVGID_4_"  style="overflow:visible;"/>
+					</clipPath>
+					<g transform="matrix(1 0 0 1 0 1.907349e-06)" style="clip-path:url(#SVGID_5_);">
+						
+							<image style="overflow:visible;" width="416" height="436" xlink:href="A7E959F7.jpg"  transform="matrix(0.7881 0 0 0.7881 -13.4232 -26.9996)">
+						</image>
+					</g>
+				</g>
+			</g>
+		</mask>
+		<g class="st2">
+			<g>
+				<defs>
+					<rect id="SVGID_6_" x="5.5" y="-7.3" width="287.7" height="313.7"/>
+				</defs>
+				<clipPath id="SVGID_7_">
+					<use xlink:href="#SVGID_6_"  style="overflow:visible;"/>
+				</clipPath>
+				<rect x="5.5" y="8.1" class="st3" width="287.7" height="298.3"/>
+			</g>
+		</g>
+	</g>
+	<polygon class="st4" points="149.6,25.9 42.7,87.6 42.7,211 149.6,272.6 256.4,211 256.4,87.6 	"/>
+	<rect x="-13.4" y="-27" class="st5" width="326" height="342.7"/>
+</g>
+</svg>

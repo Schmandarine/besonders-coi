@@ -1,0 +1,54 @@
+
+@import "./variables";
+
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "../../../node_modules/bootstrap/scss/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+
+@import "./above-the-fold/site-navigation";
+@import "./above-the-fold/hamburger-icon";
+@import "./above-the-fold/hero-content";
+
+@import "../../../node_modules/slick-carousel/slick/slick";
+$slick-font-path: "../fonts/";
+$slick-font-family: "slick";
+$slick-loader-path: "../img/";
+@import "../../../node_modules/slick-carousel/slick/slick-theme";
+@import "./assets/slick-custom";
+
+@import "./assets/simplelightbox";
+
+@import "./karten";
+@import "./globals";
+@import "./site-footer";
+@import "./site-meta-contact";
+
+@import "./assets/hexagon";
+@import "./assets/section-spacer";
+@import "./assets/bg-pattern";
+
+@import "./templates/subpage";
+@import "./templates/posts";
+
+@import "./searchform";
+@import "./templates/search-results";
+
+@import "./bannerhexagon";
+
+
+
+
+
+
+
+img.design-system {
+    max-width: 100%;
+    height: auto;
+}
+
+.full-width {
+    width: 99vw;
+    position: relative;
+    margin-left: -50vw;
+    left: 50%;
+  }

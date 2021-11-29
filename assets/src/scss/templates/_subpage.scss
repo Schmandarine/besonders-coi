@@ -1,0 +1,37 @@
+.faq-list {
+    list-style-type: none !important;
+    list-style-image: none !important;
+
+    li {
+        margin: 0 !important;
+        
+        &:before {
+            display: none!important;
+        }
+
+        a {
+            background-color: $light;
+            margin: 8px 0 !important;
+            padding: 0.7rem;
+            border-radius: 6px;
+            display: block;
+            padding-left: 40px;
+            position: relative;
+
+            &:hover {
+                color: white;
+                background-color: $primary;
+                text-decoration: none;
+            }
+
+            &:before {
+                content: '#';
+                color: $dark;
+                position: absolute;
+                left: 17px;
+                top: 0;
+                transform: translateY(50%);
+            }
+        }
+    }
+}
